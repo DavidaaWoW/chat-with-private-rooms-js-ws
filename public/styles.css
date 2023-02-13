@@ -1,5 +1,4 @@
 .chat-wrapper {
-    padding: 0vh 8rem 0;
     height: 100vh;
     overflow: hidden; }
 .chat-wrapper .chat-body {
@@ -126,3 +125,143 @@
     color: #fff; }
 #overlay-name-input #name-input::placeholder {
     color: #fff; }
+
+#status-window{
+    border-right: red 2px dashed;
+    max-width: 17em;
+}
+
+#status-window > h1{
+    font-size: 1.3em;
+}
+
+.status-bulb{
+    width: 5%;
+}
+
+.back-btn, .option-btn{
+    padding: 1em;
+    width: 5%;
+}
+
+.option-btn{
+    width: 5%;
+}
+
+.name-label{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.status-bar{
+    height: 10%;
+}
+
+.send-message{
+    height: 10%;
+    display: flex;
+    align-items: end;
+    padding-bottom: 1em;
+}
+
+#chat-messages{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    overflow-y: auto;
+    max-height: 38em;
+}
+
+.attachment{
+    width: 5%;
+    height: 3em;
+    padding-left: 1em;
+}
+
+#msg-input{
+    width: 80%;
+    height: 3em;
+}
+
+#send-btn{
+    width: 15%;
+    height: 3em;
+}
+
+.msg-type-1{
+    text-align: center;
+    color: darkslategray;
+    font-size: 1.2em;
+}
+
+.msg-type-2{
+    text-align: left;
+    background-color: lightblue;
+    width: max-content;
+    padding: 1em;
+    border-radius: 1em;
+    max-width: 80%;
+}
+
+.msg-type-3{
+    text-align: right;
+    background-color: lightgreen;
+    width: max-content;
+    padding: 1em;
+    border-radius: 1em;
+    max-width: 80%;
+    align-self: end;
+}
+
+.online-square, .offline-square{
+    width: 16px;
+    height: 16px;
+    border-radius: 1em;
+    margin-right: 1em;
+}
+
+.online-square{
+    background-color: green;
+}
+
+.offline-square{
+    background-color: gray;
+}
+
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    font-size: 1.5em;
+}
+
+.status-name{
+    font-size: 1.5em;
+}
+
+.status-bulb{
+    margin-top: 0.3em;
+}
+
+.notification{
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.not-on{
+    width: 16px;
+    height: 16px;
+    border-radius: 1em;
+    background-color: blue;
+}
+
+.not-off{
+    display: none;
+}

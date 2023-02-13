@@ -6,6 +6,33 @@ class Message extends hasInterfaceElements{
         this.last_user = last_user;
     }
 
+    alert_msg = (message) => {
+        const chat_window = this.getInterfaceElementByName(this.slug["chat_messages_slug"]);
+        const msg = document.createElement('div');
+        msg.classList.add('msg-type-1');
+        msg.innerHTML = message;
+        chat_window.append(msg);
+        this.scroll_to_end();
+    }
+
+    outcoming_msg = (message) => {
+        const chat_window = this.getInterfaceElementByName(this.slug["chat_messages_slug"]);
+        const msg = document.createElement('div');
+        msg.classList.add('msg-type-3');
+        msg.innerHTML = message;
+        chat_window.append(msg);
+        this.scroll_to_end();
+    }
+
+    incoming_msg = (message) => {
+        const chat_window = this.getInterfaceElementByName(this.slug["chat_messages_slug"]);
+        const msg = document.createElement('div');
+        msg.classList.add('msg-type-2');
+        msg.innerHTML = message;
+        chat_window.append(msg);
+        this.scroll_to_end();
+    }
+
     chat_msg = (txt, user, personal = false ) => {
         const chat_window = this.getInterfaceElementByName(this.slug["chat_messages_slug"]);
         const msg = document.createElement('div');
